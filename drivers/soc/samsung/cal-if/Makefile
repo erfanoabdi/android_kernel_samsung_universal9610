@@ -16,6 +16,8 @@ obj-$(CONFIG_ACPM_DVFS)			+= acpm_dvfs.o fvmap.o
 
 ifndef CONFIG_SOC_EMULATOR8895
 obj-$(CONFIG_SOC_EXYNOS8895)		+= exynos8895/cal_data.o
+# not gonna even bother with this
+ccflags-y							+= $(call cc-disable-warning, sizeof-pointer-div)
 else
 obj-$(CONFIG_SOC_EMULATOR8895)		+= emulator8895/cal_data.o
 endif
