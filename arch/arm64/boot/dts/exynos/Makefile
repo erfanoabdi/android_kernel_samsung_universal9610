@@ -4,6 +4,14 @@ dtb-$(CONFIG_ARCH_EXYNOS) += \
 	exynos5433-tm2e.dtb	\
 	exynos7-espresso.dtb
 
+dtb-$(CONFIG_SOC_EXYNOS9610) += \
+	exynos9610.dtb
+
+dtbo-$(CONFIG_MACH_SAMSUNG_GALAXY_A51) += \
+	exynos9611-a51_eur_open_00.dtbo	\
+	exynos9611-a51_eur_open_01.dtbo	\
+	exynos9611-a51_eur_open_03.dtbo
+
 always		:= $(dtb-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb
