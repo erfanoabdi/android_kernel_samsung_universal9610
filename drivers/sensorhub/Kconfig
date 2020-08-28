@@ -196,6 +196,5 @@ config SENSORS_SX9360_SUB
 	  This option enables grip sensors using
 	  SemTech sx9330 sub device driver.
 	  Say N here if you do not use sx9330 sub.
-	  
-source "drivers/sensorhub/factory/Kconfig"
 
+source "drivers/sensorhub/factory/Kconfig"
