@@ -299,6 +299,13 @@ config MACH_SAMSUNG_GALAXY_A51
 	depends on SOC_EXYNOS9610
 	help
 	  This enables support for the Samsung Galaxy A51.
+	  
+config MACH_SAMSUNG_GALAXY_M31
+	bool "Samsung Galaxy M31 Board"
+	depends on SOC_EXYNOS9610
+	help
+	  This enables support for the Samsung Galaxy M31.
+
 
 endmenu
 endmenu
